@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_list_provider/features/todos/controllers/todos_controller.dart';
+import 'package:todo_list_provider/features/todos/screens/add_todo_screen.dart';
+import 'package:todo_list_provider/features/todos/widgets/add_todo_icon_widget.dart';
 import 'package:todo_list_provider/features/todos/widgets/loading_error_widget.dart';
 import 'package:todo_list_provider/features/todos/widgets/todo_checkbox_widget.dart';
 import 'package:todo_list_provider/features/todos/widgets/todo_date_widget.dart';
@@ -49,6 +51,12 @@ class _TodosScreenState extends State<TodosScreen> {
     });
   }
 
+  void _goToAddTodoScreen(){
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => const AddTodoScreen())
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final todosCtrl = context.watch<TodosController>();
@@ -57,7 +65,7 @@ class _TodosScreenState extends State<TodosScreen> {
       appBar: AppBar(
         title: const Text("To do List"),
         actions: [
-          AddTodoIconWidget()
+          AddTodoIconWidget(goToAddTodoScreen: _goToAddTodoScreen,)
         ],
       ),
 
