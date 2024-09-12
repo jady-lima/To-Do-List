@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:todo_list_provider/shared/extensions/date_extension.dart';
 import 'package:todo_list_provider/shared/widgets/inputs/text_input_widget.dart';
 
 class DateTextInputWidget extends StatelessWidget {
   final TextEditingController todoDateTec;
   final FocusNode todoDateFn;
-  final void Function() addTodo;
   final void Function(DateTime date) setDate;
 
   const DateTextInputWidget({
     super.key, 
     required this.todoDateTec, 
     required this.todoDateFn, 
-    required this.addTodo, 
     required this.setDate,
   });
   
@@ -28,7 +27,6 @@ class DateTextInputWidget extends StatelessWidget {
         return null;
       },
 
-      onFieldSubmitted: (_) => addTodo(),
       textInputAction: TextInputAction.send,
       readOnly: true,
       onTap: () async {
@@ -43,11 +41,10 @@ class DateTextInputWidget extends StatelessWidget {
         String stringDate = "";
         if(date != null){
           setDate(date);
-          stringDate = date.toIso8601String();
+          stringDate = date.formatDate;
         }
 
         todoDateTec.text = stringDate;
-        todoDateFn.unfocus();
       },
     );
   }
