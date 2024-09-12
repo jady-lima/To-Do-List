@@ -26,8 +26,8 @@ class MyApp extends StatelessWidget {
         )
       ),
       home: const TodosScreen(),
-      localizationsDelegates: const [GlobalMaterialLocalizations.delegate],
-      supportedLocales: const [Locale('pt', 'BR')],
+      //localizationsDelegates: const [GlobalMaterialLocalizations.delegate],
+      //supportedLocales: const [Locale('pt', 'BR')],
     );
   }
 }
