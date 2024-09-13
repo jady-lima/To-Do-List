@@ -1,1 +1,1 @@
-const defaultErrorMassage = "Something is worng. Please, try later";
+const defaultErrorMassage = "Something is wrong. Please, try later";
