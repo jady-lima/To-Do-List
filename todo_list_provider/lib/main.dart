@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
           LocalStorageService(),
         ),
       ),
+
       child: MaterialApp(
         title: 'To do List',
         theme: ThemeData(
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
             )
           )
         ),
+        
         home: const TodosScreen(),
         localizationsDelegates: const [GlobalMaterialLocalizations.delegate, GlobalCupertinoLocalizations.delegate],
         supportedLocales: const [Locale('pt', 'BR')],
