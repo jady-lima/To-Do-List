@@ -1,21 +1,20 @@
-# To-Do-List
+# 📝 To-Do-List
 
 Aplicativo Flutter para gerenciar tarefas diárias, desenvolvido como estudo prático para aprimorar habilidades com gerenciamento de estado e a arquitetura de aplicativos móveis.
 
-## Funcionalidades
+## ✨ Funcionalidades
 
-- **Adicionar Tarefa:** Permite adicionar novas tarefas com título e descrição.
-- **Editar e Excluir Tarefas:** Possibilita a edição de tarefas existentes e a exclusão quando necessário.
-- **Marcar como Concluída:** Alterna o status de uma tarefa para sinalizar que foi concluída.
-- **Filtro de Tarefas:** Filtra tarefas concluídas e não concluídas para facilitar o gerenciamento.
+- ➕ **Adicionar Tarefa:** Permite adicionar novas tarefas com título e descrição.
+- ✏️ **Editar e Excluir Tarefas:** Possibilita a edição de tarefas existentes e a exclusão quando necessário.
+- ✅ **Marcar como Concluída:** Alterna o status de uma tarefa para sinalizar que foi concluída.
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-- **Flutter:** Framework de desenvolvimento para criar a interface do usuário do aplicativo.
-- **Provider:** Para gerenciamento de estado entre diferentes telas do aplicativo.
-- **IA Generativa:** Utilizada para criação da documentação do projeto.
+- 🚀 **Flutter:** Framework de desenvolvimento para criar a interface do usuário do aplicativo.
+- 🔄 **Provider:** Para gerenciamento de estado entre diferentes telas do aplicativo.
+- 🤖 **IA Generativa:** Utilizada para criação e automação da documentação do projeto.
 
-## Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
 - **main.dart:** Ponto de entrada do aplicativo.
 - **models:** Modelos de dados, incluindo as definições das tarefas.
@@ -23,7 +22,7 @@ Aplicativo Flutter para gerenciar tarefas diárias, desenvolvido como estudo pr�
 - **screens:** Contém telas principais do aplicativo, como listagem e detalhes de tarefas.
 - **widgets:** Widgets personalizados reutilizáveis.
 
-## Instalação
+## 🚀 Instalação
 
 1. Clone o repositório:
    ```bash
@@ -42,7 +41,7 @@ Aplicativo Flutter para gerenciar tarefas diárias, desenvolvido como estudo pr�
    flutter run
    ```
 
-## Contribuições
+## 🤝 Contribuições
 
 Contribuições são bem-vindas! Para isso, siga as etapas:
 
@@ -60,7 +59,3 @@ Contribuições são bem-vindas! Para isso, siga as etapas:
    git push origin minha-nova-feature
    ```
 5. Abra um Pull Request.
-
-## Licença
-
-Este projeto é licenciado sob a licença MIT. Para mais detalhes, consulte o arquivo LICENSE.
